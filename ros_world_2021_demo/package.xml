@@ -4,16 +4,19 @@
   <name>ros_world_2021_demo</name>
   <version>0.0.1</version>
   <description>
-    ros2_tracing demo for ROS World 2021
+    ros2_tracing demo for ROS World 2021 with tracepoint in application.
   </description>
   <maintainer email="bedard.christophe@gmail.com">Christophe Bedard</maintainer>
   <license>Apache License 2.0</license>
   <author email="bedard.christophe@gmail.com">Christophe Bedard</author>
+  <author email="jan.staschulat@de.bosch.com">Jan Staschulat</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>tracetools</depend>
 
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>

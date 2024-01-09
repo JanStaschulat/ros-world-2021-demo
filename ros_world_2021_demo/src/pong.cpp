@@ -16,6 +16,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/u_int32.hpp"
+#include "ros_world_2021_demo/tp.h"
 
 class PongNode : public rclcpp::Node
 {
@@ -46,6 +47,9 @@ private:
   {
     auto msg = std::make_shared<std_msgs::msg::UInt32>();
     msg->data = count;
+          
+    lttng_ust_tracepoint(my_app, my_tracepoint, 42);
+
     RCLCPP_INFO(this->get_logger(), "<- %d", count);
     pub_->publish(*msg);
   }

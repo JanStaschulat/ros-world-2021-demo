@@ -2,6 +2,8 @@
 
 Demo for ROS World 2021 talk: *Tracing ROS 2 with ros2_tracing* ([video](https://vimeo.com/652633418), [slides](https://gitlab.com/ros-tracing/ros2_tracing/-/raw/master/doc/2021-10-20_ROS_World_2021_-_Tracing_ROS_2_with_ros2_tracing.pdf)).
 
+New feature:  user-defined tracepoint in application (pong.cpp)
+
 ## Demo
 
 In the demo, we trace a [ping](./ros_world_2021_demo/src/ping.cpp) node and a [pong](./ros_world_2021_demo/src/pong.cpp) node.
